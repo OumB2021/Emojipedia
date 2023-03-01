@@ -4,7 +4,12 @@ import emojipedia from "../emojipedia";
 
 function createEntry(entry) {
   return (
-    <Entry emoji={entry.emoji} name={entry.name} meaning={entry.meaning} />
+    <Entry
+      key={entry.id}
+      emoji={entry.emoji}
+      name={entry.name}
+      meaning={entry.meaning}
+    />
   );
 }
 function App() {
